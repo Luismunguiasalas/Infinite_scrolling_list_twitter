@@ -2,3 +2,56 @@
     box-sizing: border-box;
     border: .1px black solid;
 }
+/* body {
+    display: flex;
+    flex-direction: column;
+} */
+
+.feed-container {
+    width: 60%;
+    margin: auto;
+    display: flex;
+}
+
+.image-section {
+    /* width: 15%; */
+    flex-grow: 1;
+    /* flex: 1,1,15%; */
+    flex-basis: 15%;
+}
+
+.main-section {
+    flex-grow:2;
+    flex-basis: 70%;
+    /* width: 50%; */
+}
+
+.main-section-header,
+.main-section-footer {
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.main-section-footer img {
+    min-width: 18%;
+    max-width:18%;
+}
+
+.sub-menu-section {
+    /* width: 15; */
+    /* margin: auto; */
+    text-align: center;
+    flex-grow: 1;
+    flex-basis: 2rem;
+    /* flex: 1,1,15%; */
+}
+
+.sub-menu-section img {
+    min-width: 50%;
+    /* width: 20%; */
+    max-width:68%;
+    height: 1.4rem;
+    margin: auto;
+}
+
+
