@@ -7,53 +7,60 @@
     <title>Twitter Feed</title>
 </head>
 <body>
-    <div class="feed-container">
+    <div class="tweet">
 
-        <div class="image-section">
-            <img class="profile-image"src="" alt="">
+        <div class="tweet__column avatar">
+            <img class="avatar__image"src="./profile img/dude.jpeg" alt="a drawing of a man wearing glasses">
         </div>
 
-        <div class="main-section">
-            <div class="main-section-header">
-                <div class="main-section-item user-name">
+        <div class="tweet__column tweet__main">
+            <div class="tweet__main__header">
+                <div class="tweet__main__header__item tweet__main__header__item--name">
                     name
                 </div>
-                <div class="main-section-item user-badge">
+                <div class="tweet__main__header__item tweet__main__header__item--badge">
+                    <img class="tweet__icon tweet__main__header__item--badge"src="./icons/iconmonstr-speech-bubble.png" alt="message bubble icon">
                     badge
                 </div>
-                <div class="main-section-item user-handle">
+                <div class="tweet__main__header__item tweet__main__header__item--handle">
                     handle
                 </div>
-                <div class="main-section-item user-duration">
+                <div class="tweet__main__header__item tweet__main__header__item--duration">
                     duration
                 </div>
             </div>
 
-            <div class="tweet-message">
+            <div class="tweet__main__message">
                 this is the tweet message
             </div>
 
-            <div class="main-section-footer">
-                <div class="main-section-footer-item comments">
-                    <img src="./icons/iconmonstr-speech-bubble-comment.png" alt="comment icon">
-                    100,000
+            <div class="tweet_footer">
+                <div class="tweet__footer__stats ">
+                    <img class="tweet__icon tweet__footer_stats__item" src="./icons/iconmonstr-speech-bubble-comment.png" alt="comment icon">
+                    <div class="tweet__footer__stats__item">
+                        100,000
+                    </div>
                 </div>
-                <div class="main-section-footer-item retweets">
-                    <img src="./icons/iconmonstr-share.png" alt="share icon">
-                    10000
+                <div class="tweet__footer__stats ">
+                    <img class="tweet__icon tweet__footer_stats__item" src="./icons/iconmonstr-share.png" alt="share icon">
+                    <div class="tweet__footer__stats__item">
+                        10,000
+                    </div>
                 </div>
-                <div class="main-section-footer-item likes">
-                    <img src="./icons/iconmonstr-thumb.png" alt="like icon">
-                    1000000
+                <div class="tweet__footer__stats ">
+                    <img class="tweet__icon tweet__footer_stats__item" src="./icons/iconmonstr-thumb.png" alt="like icon">
+                    <div class="tweet__footer__stats__item">
+                        1,000
+                    </div>
                 </div>
             </div>
 
-            <!-- </div> -->
         </div>
 
-        <div class="sub-menu-section">
-            <img src="./icons/iconmonstr-menu.png" alt="menu hamburger icon">
+        <div class="tweet__menu">
+            <img class="tweet__icon tweet__menu__icon" src="./icons/iconmonstr-menu.png" alt="menu hamburger icon">
         </div>
     </div>  
+    <script src="client.js" ></script>
 </body>
 </html>

@@ -2,56 +2,89 @@
     box-sizing: border-box;
     border: .1px black solid;
 }
-/* body {
-    display: flex;
-    flex-direction: column;
-} */
 
-.feed-container {
-    width: 60%;
-    margin: auto;
-    display: flex;
+.tweet{
+    width: 38rem;
+    /* background: grey; */
+    position: relatieve;
+    border: 1px solid gray;
+}
+.tweet__main{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tweet__main__header{
+    /* background: green; */
 }
 
-.image-section {
-    /* width: 15%; */
-    flex-grow: 1;
-    /* flex: 1,1,15%; */
-    flex-basis: 15%;
+.tweet__main__header__item{
+    display: inline-block;
 }
 
-.main-section {
-    flex-grow:2;
-    flex-basis: 70%;
-    /* width: 50%; */
+.tweet__main__header__item--name{
+    font-size: 15px;
+    font-weight: bold;
 }
 
-.main-section-header,
-.main-section-footer {
-    display: flex;
-    /* flex-direction: column; */
+.tweet__main__header__item--handle,
+.tweet__main__header__item--duration{
+    font-weight: 200;
+    color: lightgrey;
+}
+.tweet__main__message{
+    /* background: purple; */
 }
 
-.main-section-footer img {
-    min-width: 18%;
-    max-width:18%;
+.tweet__footer{
+    /* background: orange; */
 }
 
-.sub-menu-section {
-    /* width: 15; */
-    /* margin: auto; */
+.tweet__footer__stats{
+    display: inline-block;
+    width: 4rem
+}
+
+.tweet__footer__stats__item{
+    display:inline-block
+}
+
+.tweet__column{
+    display: inline-block;
+}
+
+.tweet__icon{
+    vertical-align: middle;
+    width: 1.5rem;
+}
+
+.tweet__main{
+    width: 25rem;
+    /* background: red; */
+}
+
+.tweet__menu{
+    position: absolute;
+    right:1rem;
+    top: 1rem;
+}
+
+.tweet__menu:hover{
+    cursor:pointer;
+}
+
+.tweet__menu__icon{
+    width: 1rem;
+}
+
+.avatar{
+    width:6rem;
+    /* background:blue; */
+    vertical-align: top;
     text-align: center;
-    flex-grow: 1;
-    flex-basis: 2rem;
-    /* flex: 1,1,15%; */
 }
 
-.sub-menu-section img {
-    min-width: 50%;
-    /* width: 20%; */
-    max-width:68%;
-    height: 1.4rem;
-    margin: auto;
+.avatar__image{
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    /* width: 100%; */
 }
-
-
